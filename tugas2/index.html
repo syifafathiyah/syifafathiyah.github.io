@@ -1,86 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice1</title>
+  <style>
 
-    <style>
-        body{
-            background-color: beige;
-        }
+    
+    /* *{
+      margin: 0;
+      padding: 0;
+      box-sizing: 0;
+    } */
 
-        .text p:first-child{
-            font-style: italic;
-        }
+    html{
+      scroll-behavior: smooth;
+    }
 
-        p:nth-child(4){
-            font-size: 20px;
-        }
+    /* Mengatur navbar menggunakan Flexbox */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif, Arial;
+      /* box-sizing: border-box; */
+    }
 
-        .image img {
-            height: 15%;
-            width: 60%;
-        }
+    .navbar {
+      display: flex; /*wajib ada*/
+      justify-content: space-between;
+      align-items: center;
+      background-color: black;
+      padding: 10px 25px;
+      color: rgb(215, 89, 70);
+      /* gap: 20px; */
+    }
+
+    .logo {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .menu {
+        padding: 0;
+        margin: 0;
+        gap: 19px;
+        display: flex;
+    } 
+
+    .menu li {
+      display: inline;
+    }
+
+    .login button {
+      font-size: 15px;
+      padding: 6px 10px;
+      background-color: rgb(240, 179, 179);
+    }
+
+    .register button {
+      margin: 0;
+      font-size: 15px;
+      padding: 6px 10px;
+      background-color: rgb(240, 179, 179);
+    }
+
+    .button-nav{
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    
+    /* Body */
+    
+    .banner {
+      height: 300px;
+      width: 100%;
+      color: whitesmoke;
+      background-color: saddlebrown;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      width: 80%;
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
 
-    </style>
+    /* .menu1{
+      width: 80%;
+    } */
+
+    .button-main button{
+      margin: 0;
+      padding: 0;
+      display: flex;
+      padding: 6px 10px;
+      background-color: rgb(255, 255, 255);
+      border: none;
+    }
+
+    .image{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+
+
+  </style>
 </head>
 <body>
-    <!-- Mau buat website coder -->
-    <!-- Title, Logo& Tagline, Navigasi Menu, foto, judul artikel, paragraf, table, list, formulir -->
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Logo</div>
 
-  <h1 style="text-align: center;">Coder Institute</h1>                          
-                                                        
+    <ul class="menu">
+      <li>Home</li>
+      <li>Blog</li>
+      <li>Contact</li>
+      <li>About</li>
+    </ul>
 
-    <div class="text">
-        <p>Tempat belajar dan berkembang untuk kamu yang tertarik untuk mendalami bidang teknologi</p>
-        
-        <div class="nav">
-            <!--Home, divisi, registrasi-->
-            <a href="./TugasRumah1.html" target="_blank">Home</a>
+    <div class="button-nav">
+    <!-- cara mengatur jaraknya -->
+      <div class="login">
+        <button>Login</button>
+      </div>
 
-            <a href="./divisi.html" target="_blank">Divisi</a>
+      <div class="register">
+        <button>Register</button>
+      </div>
+    </div>
+  </div>
 
-            <a href="./registrasi.html" target="_blank">Registrasi</a>
+  <article>
+    <div class="article1">
+      <div class="banner">
+        <div class="wrapper">
+          <section>
+            <h1>
+            Selamat Datang di Website
+            </h1>
+          </section>
+
+          <section>
+            <p class="menu1"> 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur veritatis voluptate et maxime enim adipisci, doloremque deleniti voluptas eos quasi odit blanditiis, rerum ex, necessitatibus vel quibusdam? Repellat quis dolorum dolores asperiores a in excepturi quos ab consequuntur quidem?
+            </p>
+          </section>
+          
+          <button>Main content</button>
+        </div>  
+      </div>
+
+      <div>
+        <h2>
+            Belajar Coding di Makassar Coding
+        </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestiae blanditiis dolorem fuga soluta distinctio autem quaerat tempore dolores veniam.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, pariatur nisi. Possimus vitae dicta magni alias, iste, hic unde soluta doloremque cupiditate consectetur, ab expedita!</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, fuga repellendus iste commodi suscipit quas provident quae numquam harum maxime quia hic perferendis minima?</p>
+        <br>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error porro modi dolores?</p>
+
+        <div class="image">
+          <img src="./img.jpg" alt="" width="500" >
+
+          <figure>
+            <span style="font-weight: bold;">Gambar:</span>Ilustrasi Belajar Coding
+          </figure>
         </div>
         
-        <p>Mau belajar Web development? Mobile development? Game development? UI/UX? ataupun Internet of things?</p>
-        <p>Semuanya ada!</p>
-    </div>
-    <br>
-
-    <div class="image">
-        <img src="./cod.jpeg" alt="Foto seluruh pengurus periode 2023-2024">
-    </div>
-    
-
-    <div class="text2">
-        <p>
-            Coder adalah Unit Kegiatan Mahasiswa (UKM) yang dinaungi Himpunan Mahasiswa Informatika Fakultas Teknik Universitas Hasanuddin. UKM ini berperan sebagai wadah bagi mahasiswa yang ingin mengembangkan kemampuan di bidang teknologi dan pemrograman. Dengan semangat komunitas yang kuat, Coder memberikan kesempatan bagi anggotanya untuk belajar, berkolaborasi, dan mengasah keterampilan teknis yang relevan dengan dunia industri saat ini.
-        </p>
-
-        <p>
-            Struktur organisasi Coder terdiri dari lima divisi utama, yang masing-masing memiliki fokus spesifik dalam bidang teknologi. Divisi-divisi tersebut meliputi Web Development, Mobile Development, Game Development, UI/UX, dan Internet of Things. Setiap divisi dirancang untuk memberikan pembelajaran yang mendalam bagi anggotanya, dengan berbagai program, proyek, dan pelatihan yang disusun secara sistematis. Dengan adanya pembagian divisi ini, anggota dapat memilih jalur pembelajaran yang sesuai dengan minat dan bakat mereka.
-        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga porro natus ipsum sequi at vero praesentium non? Accusamus temporibus amet illo non quisquam? Iste, animi quasi! Illum, illo consectetur.</p>
         
-        <p>
-            Sebagai bagian dari Himpunan Mahasiswa Informatika, Coder menjadi tempat untuk meningkatkan keterampilan teknis melalui berbagai kegiatan seperti workshop, seminar, dan pertemuan pembelajaran yang konsisten tiap bulannya. UKM ini mendorong anggotanya untuk aktif berinovasi dan berbagi ilmu. Dengan semangat kebersamaan dan komitmen untuk berkembang, Coder menjadi ruang yang ideal bagi mahasiswa yang ingin memperdalam pemahaman mereka tentang teknologi.
-        </p>
-<br>
-<br> 
+        <div class="article-list">
+        <h3>Daftar Artikel</h3>
+        <ul class="list-artikel">
+            <li>
+              <a href="">Article 1</a>
+              <p>Lorem ipsum dolor sit amet.....</p>
+            </li>
+            <li>
+              <a href="">Article 2</a>
+              <p>Lorem ipsum dolor sit amet....</p>
+            </li>
+            <li>
+              <a href="">Article 3</a>
+              <p>Lorem ipsum dolor sit amet......</p>
+            </li>
+        </ul>
+      </div>
 
-    </div>
 
-    <div class="text3">
-        <p style="font-size: 18px; margin-bottom: 0;">Kontak kami</p>
 
-        <a href="https://www.instagram.com/coderinstitute/" target="_blank">Instagram</a>
-        <br>
-        <a href="https://www.linkedin.com/company/coder-institute/about/" target="_blank">Linkedin</a>    
-        
-    </div>
-    
-  
+  </div>
 </body>
-</html> 
+</html>
