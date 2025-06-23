@@ -1,0 +1,52 @@
+html {
+  scroll-behavior: smooth;
+}
+
+    
+    .parisienne-regular {
+        font-family: "Parisienne", cursive;
+        font-weight: 400;
+        font-style: normal; 
+    }
+
+    .display-4{
+        font-family: "Parisienne", cursive;
+        font-weight: 400;
+        font-style: normal; 
+    }
+
+    .jumbotron{
+        padding: 2rem;
+        padding-bottom: 20px;
+        background-color: #328e6e31;
+        text-align: center;
+    }
+
+    .btn-jumbotron {
+        color: #328e6e;
+        border: 2px solid #328e6e;
+        background-color: transparent;
+        transition: 0.2s;
+    }
+
+    .btn-jumbotron:hover {
+        background-color: #328e6e;
+        color: rgb(0, 0, 0);
+    }
+
+    /* menu */
+    .makanan{
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .menu{
+        padding: 19rem;
+    }
+
+    .h2{
+        padding: 12rem;
+    }
+
+
+    
