@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rengkoeh</title>
 
-
     <!-- style parisienne -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link ikon medsos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-      crossorigin="anonymous">
+      crossorigin="anonymous"
+    />
 
     <!-- ke CSS -->
-     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-
     <!-- untuk js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
@@ -38,12 +43,19 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
       integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
-      crossorigin="anonymous"></script>
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-tertiary" style ="background-color: #328e6e" data-bs-theme="light">
+    <nav
+      class="navbar navbar-expand-lg bg-tertiary"
+      style="background-color: #328e6e"
+      data-bs-theme="light"
+    >
       <div class="container">
-        <a class="navbar-brand text-light parisienne-regular" href="#">Rengkoeh</a>
+        <a class="navbar-brand text-light parisienne-regular" href="#"
+          >Rengkoeh</a
+        >
         <!-- ubah font tulisannya jdi miring-->
         <button
           class="navbar-toggler"
@@ -60,16 +72,17 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Tentang kami</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Tentang kami</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Kontak</a>
-            </li> 
-
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -81,118 +94,188 @@
       <div class="container">
         <h1 class="display-4">Rengkoeh</h1>
         <p class="lead">
-          Rengkoeh Cafe & Eatery adalah kafe yang bekerja sama dengan Kulo coffee. Rengkoeh Cafe & Eatery menawarkan berbagai menu makanan, sedangkan Kulo menawarkan aneka minuman.
+          Rengkoeh Cafe & Eatery adalah kafe yang bekerja sama dengan Kulo
+          coffee. Rengkoeh Cafe & Eatery menawarkan berbagai menu makanan,
+          sedangkan Kulo menawarkan aneka minuman.
         </p>
 
-        <button class="btn btn-jumbotron" >Menu</button>
+        <button class="btn btn-jumbotron">Menu</button>
       </div>
     </section>
 
-    <br>
+    <br />
     <!-- Title Menu -->
-     <h2  id="menu" class="container text-center">Menu</h2>
+    <h2 id="menu" class="container text-center mb-4">Menu</h2>
 
-    <!-- Menu pakai card -->
-    <section class="makanan d-flex flex-wrap gap-4">
-
-        <!-- mie-->
-        <div class="card mb-5" style="width: 12rem;">
-            <img src="mie.jpg" class="card-img-top" width="100" height="150" alt="Mie Nyemek">
-            <div class="card-body">
-                <p class="card-text">Mie nyemek</p>
+    <section class="container">
+      <div class="row justify-content-center">
+        <div class="col-6 col-md-4 col-lg-2 mb-4">
+          <div class="card h-100">
+            <img
+              src="mie.jpg"
+              class="card-img-top img-fluid"
+              alt="Mie Nyemek"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Mie Nyemek</p>
             </div>
-        </div>      
-
-        <!-- kwetiau -->
-        <div class="card mb-5" style="width: 12rem;">
-            <img src="./kwetiau.jpg" class="card-img-top" width="100" height="150"  alt="Kwetiau goreng">
-            <div class="card-body">
-                <p class="card-text">Kwetiau Goreng</p>
-            </div>
+          </div>
         </div>
 
-        <!-- Nasi goreng-->
-        <div class="card mb-5" style="width: 12rem;">
-            <img src="./nasiGoreng.jpg" class="card-img-top" width="100" height="150"  alt="Nasi goreng">
-            <div class="card-body">
-                <p class="card-text">Nasi Goreng</p>
+        <div class="col-6 col-md-4 col-lg-2 mb-4">
+          <div class="card h-100">
+            <img
+              src="./kwetiau.jpg"
+              class="card-img-top img-fluid"
+              alt="Kwetiau Goreng"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Kwetiau Goreng</p>
             </div>
+          </div>
         </div>
 
-        <!-- Nasi Bakar -->        
-        <div class="card mb-5" style="width: 12rem;">
-            <img src="./nasiBakar.jpg" class="card-img-top" width="100" height="150"  alt="Nasi bakar">
-            <div class="card-body">
-                <p class="card-text">Nasi Bakar</p>
+        <div class="col-6 col-md-4 col-lg-2 mb-4">
+          <div class="card h-100">
+            <img
+              src="./nasiGoreng.jpg"
+              class="card-img-top img-fluid"
+              alt="Nasi Goreng"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Nasi Goreng</p>
             </div>
+          </div>
         </div>
-        
-        <!-- Rice Bowl -->
-        <div class="card mb-5">
-            <img src="./riceBowl.jpg" class="card-image-top" width="150" height="150"  alt="Rice Bowl">
-            <div class="card-body">
-                <p class="card-text">Rice Bowl</p>
+
+        <div class="col-6 col-md-4 col-lg-2 mb-4">
+          <div class="card h-100">
+            <img
+              src="./nasiBakar.jpg"
+              class="card-img-top img-fluid"
+              alt="Nasi Bakar"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Nasi Bakar</p>
             </div>
-        </div>  
-        
-        <!-- roti bakar -->
-        <div class="card mb-5">
-            <img src="./roti.jpg" class="card-image-top" width="150" height="150"  alt="Roti bakar">
-            <div class="card-body">
-                <p class="card-text">Roti Bakar</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 mb-4">
+          <div class="card h-100">
+            <img
+              src="./riceBowl.jpg"
+              class="card-img-top img-fluid"
+              alt="Rice Bowl"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Rice Bowl</p>
             </div>
-        </div>  
-        
-        <!-- dimsum -->
-        <div class="card mb-5">
-            <img src="./dimsum.jpg" class="card-image-top" width="150" height="150"  alt="Dimsum">
-            <div class="card-body">
-                <p class="card-text">dimsum</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 mb-4">
+          <div class="card h-100">
+            <img
+              src="./roti.jpg"
+              class="card-img-top img-fluid"
+              alt="Roti Bakar"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Roti Bakar</p>
             </div>
-        </div>   
-        
-        <!-- gyoza -->
-        <div class="card mb-5" >
-            <img src="./gyoza.jpg" class="card-image-top" width="150" height="100" alt="Gyoza">
-            <div class="card-body">
-                <p class="card-text">Gyoza</p>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 mb-4">
+          <div class="card h-100">
+            <img
+              src="./dimsum.jpg"
+              class="card-img-top img-fluid"
+              alt="Dimsum"
+            />
+            <div class="card-body text-center">
+              <p class="card-text">Dimsum</p>
             </div>
-        </div>       
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-2 mb-4">
+          <div class="card h-100">
+            <img src="./gyoza.jpg" class="card-img-top img-fluid" alt="Gyoza" />
+            <div class="card-body text-center">
+              <p class="card-text">Gyoza</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Kontak -->
     <section id="contact">
-        <div class="container">
-            <div class="col">
-                <h2 class="text-center">Kontak Kami</h2>
-            </div>
+      <div class="container">
+        <div class="col">
+          <h2 class="text-center">Kontak Kami</h2>
         </div>
+      </div>
     </section>
     <form>
-    <div class="form-group container">
+      <div class="form-group container">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <small id="emailHelp" class="form-text text-muted">Email anda tidak akan dibagikan ke siapapun</small>
-    </div>
-    <div class="form-group container">
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <small id="emailHelp" class="form-text text-muted"
+          >Email anda tidak akan dibagikan ke siapapun</small
+        >
+      </div>
+      <div class="form-group container">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="form-group form-check container">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="form-group form-check container">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
         <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <div class="d-flex justify-content-center mt-3">
-    <button type="submit" class="btn btn-primary">Submit</button> 
-    </div>
+      </div>
+      <div class="d-flex justify-content-center mt-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </form>
+    <br><br>
 
-    
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 pt-5">
+      <div class="container text-center">
+        <div class="mb-3">
+          <h4 class="mt-2" style="font-family: 'Parisienne', cursive">
+            Rengkoeh
+          </h4>
+        </div>
 
-
-
-
-
-
+        <p class="mb-2">
+          © 2025 Syifa. All Rights Reserved. | 
+          semua hak cipta dari google
+          <br>
+        </p>
+        <div class="social-icons mb-3">
+          <a href="https://www.linkedin.com/in/syifa-fathiyah-3013902b6" class="text-white mx-2"
+            ><i class="bi bi-linkedin fs-4"></i
+          ></a>
+          <a href="https://www.youtube.com/@D-Rhy" class="text-white mx-2"
+            ><i class="bi bi-youtube fs-4"></i
+          ></a>
+          <a href="#" class="text-white mx-2"
+            ><i class="bi bi-instagram fs-4"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

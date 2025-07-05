@@ -2,51 +2,96 @@ html {
   scroll-behavior: smooth;
 }
 
-    
-    .parisienne-regular {
-        font-family: "Parisienne", cursive;
-        font-weight: 400;
-        font-style: normal; 
-    }
+.parisienne-regular {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
-    .display-4{
-        font-family: "Parisienne", cursive;
-        font-weight: 400;
-        font-style: normal; 
-    }
+.display-4 {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
-    .jumbotron{
-        padding: 2rem;
-        padding-bottom: 20px;
-        background-color: #328e6e31;
-        text-align: center;
-    }
+.jumbotron {
+  padding: 4rem 2rem;
+  padding-bottom: 20px;
+  background-color: #328e6e31;
+  text-align: center;
+}
 
-    .btn-jumbotron {
-        color: #328e6e;
-        border: 2px solid #328e6e;
-        background-color: transparent;
-        transition: 0.2s;
-    }
+.btn-jumbotron {
+  color: #328e6e;
+  border: 2px solid #328e6e;
+  background-color: transparent;
+  transition: 0.2s;
+}
 
-    .btn-jumbotron:hover {
-        background-color: #328e6e;
-        color: rgb(0, 0, 0);
-    }
+.btn-jumbotron:hover {
+  background-color: #328e6e;
+  color: rgb(255, 255, 255); /* dari hitam ke putih */
+}
 
-    /* menu */
-    .makanan{
-        padding: 2rem;
-        text-align: center;
-    }
+/* menu */
+/* .makanan {
+  padding: 2rem; */
+  /* text-align: center;
+}
 
-    .menu{
-        padding: 19rem;
-    }
+.menu {
+  padding: 19rem;
+}
 
-    .h2{
-        padding: 12rem;
-    }
+.h2 {
+  padding: 12rem;
+} */
 
+/* Styling khusus untuk gambar di dalam card menu */
+.card-img-top {
+  width: 100%; /* Pastikan gambar mengisi lebar card */
+  height: 180px; /* Atur tinggi gambar secara konsisten */
+  object-fit: cover; /* Ini yang PENTING untuk mengatasi masalah gambar terdistorsi/terpotong aneh */
+  object-position: center; /* Memastikan bagian tengah gambar selalu terlihat */
+}
 
-    
+/* Styling untuk bagian kontak */
+#contact .container {
+  padding-top: 3rem; /* Memberi jarak dari bagian menu di atasnya */
+  padding-bottom: 3rem; /* Memberi jarak dari form di bawahnya */
+}
+
+#contact h2 {
+  margin-bottom: 2rem; /* Jarak antara judul kontak dan form */
+  color: #121212; /* Warna judul kontak agar konsisten */
+}
+
+/* Styling untuk form */
+form .form-group {
+    margin-bottom: 1rem; /* Jarak antar grup form */
+}
+
+form .btn-primary {
+    background-color: #328e6e; /* Warna tombol submit */
+    border-color: #328e6e; /* Warna border tombol submit */
+}
+
+form .btn-primary:hover {
+    background-color: #2a7a5d; /* Warna hover tombol submit */
+    border-color: #2a7a5d;
+}
+
+/* footer */
+/* style.css */
+
+/* ... (kode CSS yang sudah ada) ... */
+
+/* Footer Specific Styles */
+footer .social-icons a:hover {
+    color: #328e6e !important; /* Warna hover ikon media sosial */
+    /* Menggunakan !important jika text-white dari Bootstrap lebih kuat */
+}
+
+footer h4 {
+    color: #ffffff; /* Memastikan judul Rengkoeh di footer berwarna putih */
+}
